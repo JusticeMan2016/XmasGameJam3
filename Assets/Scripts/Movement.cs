@@ -2,34 +2,64 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+namespace Christmas
 {
-    private Animator anim;
-    // Use this for initialization
-    void Start()
+    public class Movement : MonoBehaviour
     {
-        anim = GetComponent<Animator>();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey("space"))
+        private Animator anim;
+        bool isLeft = true;
+        int cutLeft, cutRight;
+
+        public int CutLeft
         {
-            anim.Play("Cutting");
+            get
+            {
+                return cutLeft;
+            }
         }
-    
-        if (Input.GetKey("right"))
-        {
-            transform.position = new Vector3( 1f, -2.6f, -1f);
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+        public int CutRight { get { return cutRight; } }
 
+        // Use this for initialization
+        void Start()
+        {
+            anim = GetComponent<Animator>();
+            cutLeft = 0;
+            cutRight = 0;
         }
 
-        if(Input.GetKey("left"))
+        // Update is called once per frame
+        void Update()
         {
-            transform.position = new Vector3(-1f, -2.6f, -1f);
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            if (Input.GetKeyDown("space"))
+            {
+                anim.Play("Cutting");
+                if (isLeft == true)
+                {
+                    cutLeft++;
+                }
+                else
+                {
+                    cutRight++;
+                }
+                Debug.Log("left Score: " + CutLeft + "\nRight Score: " + cutRight);
+            }
+
+            if (Input.GetKey("right"))
+            {
+                transform.position = new Vector3(1f, -2.6f, -1f);
+                transform.localScale = new Vector3(-1f, 1f, 1f);
+                isLeft = false;
+
+            }
+
+            if (Input.GetKey("left"))
+            {
+                transform.position = new Vector3(-1f, -2.6f, -1f);
+                transform.localScale = new Vector3(1f, 1f, 1f);
+                isLeft = true;
+            }
         }
     }
 }
+
