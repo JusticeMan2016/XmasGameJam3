@@ -20,7 +20,6 @@ public class Spawner : MonoBehaviour {
     float ogSpeedUpCounter;
     public int speedUp = 0;
 
-
 	// Use this for initialization
 	void Start () {
         timer = Random.Range(3, 10);
@@ -36,6 +35,7 @@ public class Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
 
         if (timer <= 0)
         {

@@ -38,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1598001394016588}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.078125, y: 0.078125, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,9 +77,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.049999997, y: 0.049999997, z: 0.049999997, w: 0.049999997}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
+    oldSize: {x: 2.56, y: 2.56}
     newSize: {x: 0.2, y: 0.2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -101,6 +101,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocity: 55
   deathTimer: 3
+  speed: 0
+  sprite1: {fileID: 21300000, guid: bbc8cfaed69cc3743ba29d87303c2db8, type: 3}
+  sprite2: {fileID: 21300000, guid: 7ebea459984e89a4f869c7e44299c506, type: 3}
+  sprite3: {fileID: 21300000, guid: 86251978a0b18314182d4e3460c2973e, type: 3}
+  sprite4: {fileID: 21300000, guid: e40c9c5b5d32c1f448a94cc007ac7311, type: 3}
+  sprite5: {fileID: 21300000, guid: dc099aa6c649cab438150ff4c0486782, type: 3}
+  sprite6: {fileID: 21300000, guid: 83f913641ae75104dbfb5ce51691987e, type: 3}
+  sprite7: {fileID: 21300000, guid: 953fefb1e297f504a83a12f3e84242fd, type: 3}
+  sprite8: {fileID: 21300000, guid: ed6789390cc06be4593375889f0e1667, type: 3}
+  sprite9: {fileID: 21300000, guid: 456a926eeab79c1438d6bc6d49e5bc4a, type: 3}
+  sprite10: {fileID: 21300000, guid: b3de441cc72aa0f43a8a4b25b0623481, type: 3}
+  sprite11: {fileID: 21300000, guid: a45168624f7cdc443a92068ff8398e81, type: 3}
 --- !u!212 &212622238860182242
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -133,7 +145,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 83f913641ae75104dbfb5ce51691987e, type: 3}
   m_Color: {r: 0.7607844, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
