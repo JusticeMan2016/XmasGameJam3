@@ -18,6 +18,18 @@ public class Movement : MonoBehaviour
         {
             anim.Play("Cutting");
         }
-           // anim.enabled = false;
+    
+        if (Input.GetKey("right"))
+        {
+            transform.position = new Vector3( 1f, -2.6f, -1f);
+            transform.localScale = new Vector3(-1f, 1f, 1f);
+
+        }
+
+        if(Input.GetKey("left"))
+        {
+            transform.position = new Vector3(-1f, -2.6f, -1f);
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
     }
 }
