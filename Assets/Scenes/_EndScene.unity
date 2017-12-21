@@ -633,6 +633,7 @@ GameObject:
   - component: {fileID: 1730160411}
   - component: {fileID: 1730160413}
   - component: {fileID: 1730160412}
+  - component: {fileID: 1730160414}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -697,6 +698,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1730160410}
+--- !u!114 &1730160414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1730160410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2015876646
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,6 +722,7 @@ GameObject:
   - component: {fileID: 2015876647}
   - component: {fileID: 2015876649}
   - component: {fileID: 2015876648}
+  - component: {fileID: 2015876650}
   m_Layer: 5
   m_Name: Message
   m_TagString: Untagged
@@ -771,6 +787,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2015876646}
+--- !u!114 &2015876650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2015876646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 1, g: 1, b: 1, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2053054565
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,6 +811,7 @@ GameObject:
   - component: {fileID: 2053054566}
   - component: {fileID: 2053054568}
   - component: {fileID: 2053054567}
+  - component: {fileID: 2053054569}
   m_Layer: 5
   m_Name: YourName
   m_TagString: Untagged
@@ -838,13 +869,27 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Naughty Person!
+  m_Text: Naughty  Person!
 --- !u!222 &2053054568
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2053054565}
+--- !u!114 &2053054569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2053054565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0.16792971, g: 0.49264705, b: 0.14127378, a: 0.5}
+  m_EffectDistance: {x: 2, y: -2}
+  m_UseGraphicAlpha: 1
 --- !u!1 &2123071987
 GameObject:
   m_ObjectHideFlags: 0
@@ -873,6 +918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameField: {fileID: 0}
+  errorMessage: {fileID: 0}
   yourName: {fileID: 2053054567}
 --- !u!4 &2123071989
 Transform:

@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		//Personalizes the message at the endscreen
-		yourName.text = "Naughty " + PlayerPrefs.GetString("Your Name");
+		yourName.text = "Naughty  " + PlayerPrefs.GetString("Your Name");
 	}
 
 	//If you press on the start button
