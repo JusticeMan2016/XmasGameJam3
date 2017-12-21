@@ -403,6 +403,16 @@ Prefab:
       value: 
       objectReference: {fileID: 1637783006337764, guid: 5459b5f662ce88e4db3b94f0f26d0897,
         type: 2}
+    - target: {fileID: 114149113500947668, guid: 35d43a5edb3968c488548597368880d7,
+        type: 2}
+      propertyPath: shake_decay
+      value: 0.002
+      objectReference: {fileID: 0}
+    - target: {fileID: 114149113500947668, guid: 35d43a5edb3968c488548597368880d7,
+        type: 2}
+      propertyPath: shake_intensity
+      value: 0.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35d43a5edb3968c488548597368880d7, type: 2}
   m_IsPrefabParent: 0
@@ -579,6 +589,11 @@ Prefab:
       propertyPath: m_Mass
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114441161974740206, guid: db3805c96845bfd4d9e3138da318a457,
+        type: 2}
+      propertyPath: tree
+      value: 
+      objectReference: {fileID: 2046691373}
     m_RemovedComponents:
     - {fileID: 70103669989854268, guid: db3805c96845bfd4d9e3138da318a457, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: db3805c96845bfd4d9e3138da318a457, type: 2}
