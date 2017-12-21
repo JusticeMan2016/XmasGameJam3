@@ -52,9 +52,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1598001394016588, guid: 09db9f56cb2867c4d9e74b2b9c030c5b, type: 2}
-  timer: 0
+  timer: 10
   speedUpTimer: 0
   minSpawnTime: 1
   maxSpawnTime: 15
   halvedMaxTime: 5
   isLeft: 0
+  speedUpCounter: 5
+  speedUp: 0
