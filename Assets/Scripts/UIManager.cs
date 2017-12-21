@@ -9,6 +9,9 @@ public class UIManager : MonoBehaviour {
 	//Name Input Field
 	public InputField nameField;
 
+	//Error Message
+	public Transform errorMessage;
+
 	//Person's name string
 	private string charName;
 
@@ -28,11 +31,18 @@ public class UIManager : MonoBehaviour {
 			charName = nameField.text;
 			PlayerPrefs.SetString ("Your Name", charName);
 			Debug.Log("Your name is " + charName);
+			//Let's play the game!
+			SceneManager.LoadScene(1);
 		} else {
+			errorMessage.gameObject.SetActive (true);
 			Debug.Log ("You have no name");
 		}
 	}
 
+	public void OnReplay(){
+		//Go back to the game
+		SceneManager.LoadScene(1);
+	}
 
 	
 	// Update is called once per frame
