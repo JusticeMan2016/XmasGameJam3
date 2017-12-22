@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameField: {fileID: 0}
-  errorMessage: {fileID: 401893663}
+  errorMessage: {fileID: 0}
   yourName: {fileID: 0}
 --- !u!4 &398968100
 Transform:
