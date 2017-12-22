@@ -30,12 +30,12 @@ public class UIManager : MonoBehaviour {
 		if (nameField.text != "") {
 			charName = nameField.text;
 			PlayerPrefs.SetString ("Your Name", charName);
-			Debug.Log("Your name is " + charName);
+			//Debug.Log("Your name is " + charName);
 			//Let's play the game!
 			SceneManager.LoadScene(1);
 		} else {
 			errorMessage.gameObject.SetActive (true);
-			Debug.Log ("You have no name");
+			//Debug.Log ("You have no name");
 		}
 	}
 

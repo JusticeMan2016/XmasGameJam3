@@ -49,7 +49,7 @@ public class Spawner : MonoBehaviour {
             if (lspawner.GetComponent<Spawner>().timer - timer < 2f && lspawner.GetComponent<Spawner>().timer - timer > 0f)
             {
                 lspawner.GetComponent<Spawner>().timer += 1f;
-                print("Time have been added");
+                //print("Time have been added");
             }
         }
 

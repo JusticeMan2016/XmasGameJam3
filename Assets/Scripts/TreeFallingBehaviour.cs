@@ -27,14 +27,14 @@ public class TreeFallingBehaviour : MonoBehaviour {
 		if (countDown == true)
 		{
 			timerOver -= Time.deltaTime;
-			print("The countdown is initiated.");
+			//print("The countdown is initiated.");
 		}
 
 		if (timerOver <= 0)
 		{
 			//You are send to the EndScene
 			//You have been VICTORIOUS!
-			print("Player has saved the day.");
+			//print("Player has saved the day.");
 			SceneManager.LoadScene (3);
 		}
 	}
