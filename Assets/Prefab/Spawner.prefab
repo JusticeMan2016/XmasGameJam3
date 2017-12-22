@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1598001394016588, guid: 09db9f56cb2867c4d9e74b2b9c030c5b, type: 2}
   timer: 10
-  speedUpTimer: 0
+  speedUpTimer: 15
   minSpawnTime: 5
   maxSpawnTime: 15
   halvedMaxTime: 7
