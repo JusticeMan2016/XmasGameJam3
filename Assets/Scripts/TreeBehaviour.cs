@@ -19,6 +19,10 @@ namespace Christmas
 
         private float temp_shake_intensity = 0;
 
+        //timer variables
+        bool countDown = false;
+        float timerOver = 6f;
+
 
         // Use this for initialization
         void Start()
@@ -73,6 +77,11 @@ namespace Christmas
                         originRotation.w + Random.Range(-temp_shake_intensity, temp_shake_intensity) * .2f);
                     temp_shake_intensity -= shake_decay;
                 }
+
+                if (countDown == true)
+                {
+                    timerOver -= Time.deltaTime;
+                }
         }
 
         public void Shake()
@@ -83,5 +92,14 @@ namespace Christmas
           //  this.transform.position = new Vector3(0, 0.3f, -0.5f);
 
         }
-    }
+
+        void OnCollisionEnter2D(Collision2D coll)
+        {
+            if (coll.gameObject.name == "Ground")
+            {
+                //Load scene after ground hit
+                countDown = true;
+            }
+        }
+        }
 }

@@ -13,6 +13,9 @@ public class Enemy : MonoBehaviour {
     bool dying;
     GameObject spawner;
     public float speed;
+    
+    private AudioSource audioSource;
+    public AudioClip audioHit;
 
     //Sprites
     public Sprite sprite1;
@@ -36,6 +39,8 @@ public class Enemy : MonoBehaviour {
         spawner = GameObject.Find("LeftSpawner");
         speed = Random.Range(-20, 20);
         velocity += spawner.gameObject.GetComponent<Spawner>().speedUp;
+
+        audioSource = GetComponent<AudioSource>();
 
         SwitchSprite();
 
@@ -77,6 +82,8 @@ public class Enemy : MonoBehaviour {
             print("Player is a massive scub and died.");
 			//You are send to the GameOver Screen
 			SceneManager.LoadScene (2);
+            audioSource.clip = audioHit;
+            audioSource.Play();
         }
     }
 	
