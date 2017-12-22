@@ -65,7 +65,15 @@ public class Enemy : MonoBehaviour {
             rb.AddForce(new Vector2(velocity * -2, 0));
             dying = true;
         }
+    }
 
+    void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.name == "Player")
+        {
+            //Game over
+            print("Player is a massive scub and died.");
+        }
     }
 	
 	// Update is called once per frame
@@ -85,7 +93,7 @@ public class Enemy : MonoBehaviour {
 
     void SwitchSprite()
     {
-        selectedSprite = Random.Range(1, 11);
+        selectedSprite = Random.Range(0, 12);
 
         switch (selectedSprite)
         {

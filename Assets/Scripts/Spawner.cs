@@ -41,7 +41,7 @@ public class Spawner : MonoBehaviour {
         {
             Instantiate(prefab, transform.position, transform.rotation);
             timer = Random.Range(minSpawnTime, maxSpawnTime);
-            spawner.GetComponent<Spawner>().timer += 0.8f;
+            spawner.GetComponent<Spawner>().timer += 2f;
         }
 
         if (speedUpTimer <= 0 && maxSpawnTime >= halvedMaxTime)
