@@ -39,11 +39,21 @@ public class UIManager : MonoBehaviour {
 		}
 	}
 
+	//If you press on the How To Play button
+	public void OnHelp(){
+		SceneManager.LoadScene (4);
+	}
+
+	//If you press on the Play Again button
 	public void OnReplay(){
 		//Go back to the game
 		SceneManager.LoadScene(1);
 	}
 
+	//If you press on the Go Back to Menu button
+	public void OnReturnMenu(){
+		SceneManager.LoadScene (0);
+	}
 	
 	// Update is called once per frame
 	void Update () {
