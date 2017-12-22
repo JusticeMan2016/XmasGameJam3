@@ -25,6 +25,9 @@ namespace Christmas
         {
             spriteRend = GetComponent<SpriteRenderer>();
             spriteRend.sprite = sprite0;
+
+            originPosition = transform.position;
+            originRotation = transform.rotation;
             
         }
 
@@ -74,9 +77,10 @@ namespace Christmas
 
         public void Shake()
         {
-            originPosition = transform.position;
-            originRotation = transform.rotation;
+            //originPosition = transform.position;
+            //originRotation = transform.rotation;
             temp_shake_intensity = shake_intensity;
+          //  this.transform.position = new Vector3(0, 0.3f, -0.5f);
 
         }
     }
