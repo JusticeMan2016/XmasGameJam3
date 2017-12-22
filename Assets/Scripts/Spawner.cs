@@ -22,7 +22,7 @@ public class Spawner : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        timer = Random.Range(3, 10);
+        timer = Random.Range(5, 15);
         ogspeedUpTimer = speedUpTimer;
         ogSpeedUpCounter = speedUpCounter;
 

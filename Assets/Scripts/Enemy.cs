@@ -69,14 +69,14 @@ public class Enemy : MonoBehaviour {
         else if (coll.gameObject.name == "Tree")
         {
             //rb.velocity = rb.velocity * -2;
-            rb.AddForce(new Vector2(velocity * -2, 0));
+            rb.AddForce(new Vector2(velocity * -4, Random.Range(-320, 320)));
             dying = true;
         }
     }
 
     void OnTriggerEnter2D(Collider2D coll)
     {
-        if (coll.gameObject.name == "Player")
+        if (coll.gameObject.name == "Player" && !dying)
         {
             //Game over
             print("Player is a massive scub and died.");
