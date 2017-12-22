@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1009897363580354}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.419, y: 4.83, z: 4.23}
+  m_LocalPosition: {x: 0, y: -2.63, z: -3.12}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -135,10 +135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chops:
-  - {fileID: 8300000, guid: 1295b8a1319cea444a4e2e175276c86c, type: 3}
-  - {fileID: 8300000, guid: 1cf843ef433dc2944aa66f41caf0466b, type: 3}
-  - {fileID: 8300000, guid: 10abcc1e48707ea40849439d3a305781, type: 3}
-  - {fileID: 8300000, guid: adb8ca8b1ac78df408fbdc33f6dfbea2, type: 3}
+  - {fileID: 8300000, guid: 6e7b6b3dd218a4556b1b851ca89ff541, type: 3}
+  - {fileID: 8300000, guid: 720b94bd4f25a4ddd8bd027a2d00ec53, type: 3}
+  - {fileID: 8300000, guid: d35e5fba9b9de402296468772e9bc463, type: 3}
+  - {fileID: 8300000, guid: cfceea57915614889bbcd838b01a547c, type: 3}
 --- !u!198 &198894794603827900
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -339,8 +339,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.05
-      minScalar: 0.05
+      scalar: 0.1
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -368,8 +368,8 @@ ParticleSystem:
     startSizeY:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.2
-      minScalar: 0.05
+      scalar: 0.4
+      minScalar: 0.1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1126,8 +1126,8 @@ ParticleSystem:
     x:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: -2
+      scalar: 4
+      minScalar: -4
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1155,8 +1155,8 @@ ParticleSystem:
     y:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: -2
+      scalar: 4
+      minScalar: -4
       maxCurve:
         serializedVersion: 2
         m_Curve:
