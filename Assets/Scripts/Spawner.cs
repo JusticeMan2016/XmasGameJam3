@@ -35,13 +35,17 @@ public class Spawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+
+        if (Mathf.Abs(spawner.GetComponent<Spawner>().timer - timer) < 2f && timer - spawner.GetComponent<Spawner>().timer < 2f ) 
+        {
+            spawner.GetComponent<Spawner>().timer += 2f;
+        }
+
 
         if (timer <= 0)
         {
             Instantiate(prefab, transform.position, transform.rotation);
             timer = Random.Range(minSpawnTime, maxSpawnTime);
-            spawner.GetComponent<Spawner>().timer += 2f;
         }
 
         if (speedUpTimer <= 0 && maxSpawnTime >= halvedMaxTime)

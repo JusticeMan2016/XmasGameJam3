@@ -472,9 +472,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d08b70a7689009946b1a6d9f07f5702e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  treeHealthLeft: 10
-  treeHealthRight: 10
-  maxTreeHealth: 30
+  treeHealthLeft: 20
+  treeHealthRight: 20
+  maxTreeHealth: 50
   shakeTime: 0
   sprite0: {fileID: 21300000, guid: 556ce0032b4fa1c47b50b89524eb101f, type: 3}
   sprite1: {fileID: 21300000, guid: 028865d88d1aa694487d84ca41f63c89, type: 3}

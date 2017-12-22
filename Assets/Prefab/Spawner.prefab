@@ -55,7 +55,7 @@ MonoBehaviour:
   timer: 10
   speedUpTimer: 0
   minSpawnTime: 5
-  maxSpawnTime: 30
+  maxSpawnTime: 15
   halvedMaxTime: 7
   isLeft: 0
   speedUpCounter: 5
