@@ -15,15 +15,6 @@ public class UIManager : MonoBehaviour {
 	//Person's name string
 	private string charName;
 
-	//Your name being displayed at the end
-	public Text yourName;
-
-	// Use this for initialization
-	void Start () {
-		//Personalizes the message at the endscreen
-		yourName.text = "Naughty  " + PlayerPrefs.GetString("Your Name");
-	}
-
 	//If you press on the start button
 	public void OnStart(){
 		//Set charName string to text in nameField, saving this in PlayerPrefs
