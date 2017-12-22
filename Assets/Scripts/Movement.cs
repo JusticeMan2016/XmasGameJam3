@@ -10,6 +10,8 @@ namespace Christmas
         private Animator anim;
         bool isLeft = true;
         int cutLeft, cutRight;
+        public GameObject tree;
+        public float time;
 
         public int CutLeft
         {
@@ -42,6 +44,9 @@ namespace Christmas
                 {
                     cutRight++;
                 }
+
+
+                tree.GetComponent<TreeBehaviour>().Shake();
                 Debug.Log("left Score: " + CutLeft + "\nRight Score: " + cutRight);
             }
 
