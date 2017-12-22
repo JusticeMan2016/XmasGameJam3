@@ -459,6 +459,21 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 941681996}
+    - target: {fileID: 114149113500947668, guid: 35d43a5edb3968c488548597368880d7,
+        type: 2}
+      propertyPath: treeHealthLeft
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114149113500947668, guid: 35d43a5edb3968c488548597368880d7,
+        type: 2}
+      propertyPath: treeHealthRight
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 114149113500947668, guid: 35d43a5edb3968c488548597368880d7,
+        type: 2}
+      propertyPath: maxTreeHealth
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 35d43a5edb3968c488548597368880d7, type: 2}
   m_IsPrefabParent: 0
