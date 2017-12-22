@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour {
     public float velocity;
@@ -58,6 +59,7 @@ public class Enemy : MonoBehaviour {
         if (coll.gameObject.name == "Player")
         {
             //Game over
+			//THIS DOES NOT WORK FOR THE GAME OVER SECTION
         }
         else if (coll.gameObject.name == "Tree")
         {
@@ -73,6 +75,8 @@ public class Enemy : MonoBehaviour {
         {
             //Game over
             print("Player is a massive scub and died.");
+			//You are send to the GameOver Screen
+			SceneManager.LoadScene (2);
         }
     }
 	
@@ -83,6 +87,7 @@ public class Enemy : MonoBehaviour {
         if (dying)
         {
             deathTimer -= Time.deltaTime;
+
         }
 
         if (deathTimer <= 0)
