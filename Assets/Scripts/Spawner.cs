@@ -14,6 +14,8 @@ public class Spawner : MonoBehaviour {
 
     public double halvedMaxTime;
     GameObject spawner;
+    GameObject lspawner;
+    GameObject rspawner;
     public bool isLeft;
 
     public float speedUpCounter;
@@ -28,19 +30,27 @@ public class Spawner : MonoBehaviour {
 
         //halvedMaxTime = maxSpawnTime / 2;
         if (isLeft)
+        {
             spawner = GameObject.Find("RightSpawner");
+            rspawner = GameObject.Find("RightSpawner");
+        }
         else
+        {
             spawner = GameObject.Find("LeftSpawner");
+            lspawner = GameObject.Find("LeftSpawner");
+        }
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (Mathf.Abs(spawner.GetComponent<Spawner>().timer - timer) < 2f && timer - spawner.GetComponent<Spawner>().timer < 2f ) 
+        if (lspawner != null)
         {
-            spawner.GetComponent<Spawner>().timer += 2f;
+            if (lspawner.GetComponent<Spawner>().timer - timer < 1f)
+            {
+                lspawner.GetComponent<Spawner>().timer += 2f;
+            }
         }
-
 
         if (timer <= 0)
         {
